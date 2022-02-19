@@ -41,9 +41,9 @@ A solução está presente em `ex3.py` e para ser executada é necessário passa
 ```python3 ex3.py '../textos.json <PATH>```
 
 
-O primeiro passo para resolver esse problema é ler o arquivo de entrada contendo os textos e fazer o parsing de JSON -> dict() e armazenado no dict `texts`, após isso a lista de expressões também é lida e armazenada numa lista chamada `exprs`.
+O primeiro passo para resolver esse problema é ler o arquivo de entrada contendo os textos e fazer o parsing de `JSON -> dict()` e armazenar no dict `texts`, após isso a lista de expressões também é lida e armazenada numa lista chamada `exprs`.
 
-Após isso, é utilizada a framework Spacy pra inicializar na variavel `nlp` um objeto da classe Language, para essa aplicação utilizamos o `Portuguese()` dado que os textos estão em português. Em seguida adicionamos a pipeline o componente `sentencizer` que faz a identificação de sentenças em um texto. Além de identificar as sentenças, o `nlp` também é capaz de fazer a tokenização dos corpus, que será necessário em etapas futuras do problema.
+Após isso, é utilizada a framework Spacy pra inicializar na variavel `nlp` um objeto da classe Language, para essa aplicação utilizamos o `Portuguese()` dado que os textos estão em português. Em seguida adicionamos à pipeline o componente `sentencizer` que faz a identificação de sentenças em um texto. Além de identificar as sentenças, o `nlp` também é capaz de fazer a tokenização dos corpus, que será necessário em etapas futuras do problema.
 
 Executamos o `nlp` em `exprs` e guardamos o retorno em `doc_exprs`. Com tudo isso pronto, inicializamos um loop para percorrer os textos.
 
