@@ -34,11 +34,11 @@ A solução está presente em `ex3.py` e para ser executada é necessário passa
 
 #### Caminho do output sendo `out.json`
 
-```python3 ex3.py '../textos.json```
+```python3 ex3.py '../textos.json'```
 
 #### Caminho do output sendo modificado
 
-```python3 ex3.py '../textos.json <PATH>```
+```python3 ex3.py '../textos.json' <PATH>```
 
 
 O primeiro passo para resolver esse problema é ler o arquivo de entrada contendo os textos e fazer o parsing de `JSON -> dict()` e armazenar no dict `texts`, após isso a lista de expressões também é lida e armazenada numa lista chamada `exprs`.
